@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: block;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/*------FIRST-SECTION-----*/
+
+.collections {
+    margin-top: 30px;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: 1fr 485px;
+    grid-gap: 15px 20px;
+}
+.card-big {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    padding: 50px 20px 341px;
+}
+
+.card-title {
+    font-family: 'Mulish';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.18;
+    color: #555555;
+}
+
+.card-text {
+    margin: 8px 0 8px;
+    font-family: 'Mulish';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #7AC751;
+}
+
+.card-link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.62;
+    color: #757575;
+}
+
+.card-link::after {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 85px;
+    width: 13px;
+    height: 9px;
+    background-image: url('../images/Vector.png');
+}
+
+.card-link:hover {
+    color: #7AC751;
+}
+
+.card-small {
+    padding: 50px 20px 98px;
+}
+
+.card-small-title {
+    font-family: 'Mulish';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.27;
+    color: #555555;
+
+}
+
+.card-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*-----TRENDS-----*/
+
+.trends {
+    margin-bottom: 100px;
+}
+
+.trends-nav {
+    display: block;
+    margin: 0 auto;
+}
+
+.main-title {
+    margin-bottom: 45px;
+    font-family: 'Mulish';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 1.25;
+    text-align: center;
+    color: #555555;
+}
+.trends-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+}
+
+.trends-link {
+    margin-left: 70px;
+    text-align: center;
+    font-family: 'Mulish';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.25;
+    color: #C2C2C2;
+    text-decoration: none;
+}
+
+.trends-link:hover, .trends-link:focus {
+    color: #7AC751;
+}
+
+/*-----CHAIRS------*/
+
+
+.chair {
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.chair:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2)
+}
+
+.chair:hover .chair-img {
+    opacity: 0.5;
+}
+
+.chair .chair-img  {
+    transition: 0.5s;
+    width: 100%;
+}
+
+.chair-icons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 25%;
+    left: 77%;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.chair-list {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.icons-link {
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.bx {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #FFFFFF;
+    color: #757575;
+    box-shadow: 0px 2px 33px rgba(0, 0, 0, 0.09);
+    border-radius: 50%;
+}
+
+.chair:hover .icons-link {
+    opacity: 1;
+}
+
+
+.chair-wrapper {
+    display: grid;
+    margin-top: 73px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 45px 30px;
+}
+
+.chair-img {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.chair-img::before {
+    content: 'New';
+    position: absolute;
+    font-family: 'Mulish';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    text-align: center;
+    letter-spacing: 0.008em;
+    color: #FFFFFF;
+    width: 44.68px;
+    height: 20.42px;
+    background-color: #00B7F1;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.sale::before {
+    content: 'Sale';
+    background-color:#7AC751;
+   
+}
+
+
+
+.chair-subtitle {
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.33;
+    letter-spacing: 0.008em;
+    text-transform: uppercase;
+    color: rgba(117, 117, 117, 0.71);
+}
+
+.chair-title {
+    margin: 9px 0;
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #555555;
+}
+
+.chair-price {
+    display: inline-block;
+    font-family: 'Mulish';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    color: #7AC751;
+}
+
+.old-price {
+    margin-left: 7px;
+    font-family: 'Mulish';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+    text-decoration-line: line-through;
+    color: #CCCCCC;
+}
+.stars {
+   display: inline-block;
+   margin-left: 95px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 66px;
+}
+
+.circle {
+    margin-right: 22px;
+}
+
+.circle:last-child {
+    margin: 0;
+}
+
+
+/*------SPECIAL------*/
+
+.special {
+    margin-bottom: 30px;
+}
+
+.special-wrapper {
+    display: grid;
+    grid-template-columns:repeat(2, 570px);
+    grid-column-gap: 30px;
+}
+
+.special-cards {
+    padding: 30px 0 29px 24px;
+}
+
+.text-container {
+    display: block;
+    max-width: 250px;
+    width: 100%;
+}
+
+.special-text {
+    margin-top: 11px;
+    margin-bottom: 20px;
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #757575;
+}
+
+.special-button {
+    margin-left: 20px;
+    padding: 7px 10px;
+    font-family: 'Mulish';
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    background: #7AC751;
+    border-radius: 2px;
+    color: #FFFFFF;
+    border: #7AC751;
+    transition-duration: 0.4s;
+}
+
+.special-button:hover {
+    background-color:#FFFFFF;
+    color:#7AC751;
+    cursor: pointer;
+}
+
+.timer {
+    margin-top: 25px;
+}
